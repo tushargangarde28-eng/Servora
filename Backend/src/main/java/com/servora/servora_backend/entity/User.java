@@ -13,15 +13,4 @@ public class User {
     private String fullName;
     private String email;
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
 }

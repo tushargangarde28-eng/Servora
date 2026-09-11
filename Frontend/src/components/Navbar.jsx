@@ -19,16 +19,16 @@ function Navbar() {
           <div className="flex h-14 items-center justify-between gap-4 sm:h-16">
 
             {/* Logo */}
+
             <Link to="/" className="flex shrink-0 items-center gap-3">
               <img
-                src="/Servora_logo2.png"
+                src="/logo1.png"
                 alt="SERVORA"
-                className="h-10 w-auto object-contain sm:h-12"
+                style={{ width: "160px", height: "auto" }}
+                className="h-100 w-auto object-contain sm:h-12"
               />
-              <span className="hidden text-xl font-bold tracking-tight text-white sm:block">
-                SERVORA
-              </span>
             </Link>
+
 
             {/* Desktop Nav */}
             <div className="hidden items-center gap-1 lg:flex">
@@ -58,7 +58,7 @@ function Navbar() {
                 Login
               </Link>
               <Link
-                to="/get-started"
+                to="/register"
                 className="group inline-flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-lg shadow-white/10 transition-all hover:bg-slate-100 hover:shadow-white/20"
               >
                 Get Started
@@ -106,7 +106,7 @@ function Navbar() {
                     Login
                   </Link>
                   <Link
-                    to="/get-started"
+                    to="/register"
                     onClick={() => setMobileMenuOpen(false)}
                     className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-slate-100"
                   >

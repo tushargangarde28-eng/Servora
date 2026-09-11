@@ -13,7 +13,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping("/api/users/test")
+    @GetMapping("/api/users/register")
     public String testUserApi() {
         return "User API is working!";
     }
